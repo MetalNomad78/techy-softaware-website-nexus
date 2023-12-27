@@ -281,9 +281,8 @@ export const education = [
     img: "https://i.ibb.co/1GXwcbx/IITG-White.png" ,
     school: "Indian Institue of Technology, Guwahati [IITG]",
     date: "2020 - 2024",
-    grade: "6.85 CGPA",
     desc: "I am currently pursuing a Bachelor's degree at Indian Institue of Technology, Guwahati [IITG]. I have completed 7 semesters and have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems among others. I was also the Public Relations Head of our Annual Cultural Fest, Alcheringa where I could hone my soft skills.",
-    degree: "Bachelor of Technology - BTech, Chemical Engineering",
+    degree: "Bachelor of Technology - BTech",
   },
   {
     id: 1,
