@@ -18,6 +18,37 @@ export const Bio = {
 
 export const skills = [
   {
+    title: "Programming",
+    skills: [
+      {
+        name: "C",
+        image:
+          "https://i.ibb.co/M86GSVd/695px-C-Programming-Language-svg.png",
+      },
+      {
+        name: "C++",
+        image:
+          "https://i.ibb.co/n19npDY/ISO-C-Logo-svg.png",
+      },
+      {
+        name: "Dart",
+        image:
+          "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
+      },
+      {
+        name: "Data Structures and Algorithms",
+        image:
+          "https://i.ibb.co/3CfXwSf/images-2-removebg-preview.png",
+      },
+      {
+        name: "Competitive Programming",
+        image:
+          "https://i.ibb.co/Rgpcxz6/competitive-coding-logo-by-dollarakshay-dc5ov3v-fullview-removebg-preview-1.png",
+      },
+      
+    ],
+  },
+  {
     title: "Frontend",
     skills: [
       {
@@ -81,7 +112,7 @@ export const skills = [
       {
         name: "MySQL",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+          "https://i.ibb.co/9bFSC4t/logo-mysql-26353.png",
       },
       // {
       //   name: "Postgresql",
@@ -90,7 +121,7 @@ export const skills = [
       {
         name: "MongoDB",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+          "https://i.ibb.co/jHxmhqj/Mongo-DB-Logo-PNG-Vector-SVG-Free-Download-removebg-preview-1.png",
       },
       {
         name: "Firebase",
@@ -289,7 +320,7 @@ export const education = [
     img: "https://i.ibb.co/5GTvvyc/j3sgepngy28ss00gowgsoc880c088kk.jpg",
     school: "Sri Lal Convent School,Delhi",
     date: "2018 - 2020",
-    grade: "91.4%",
+    percentage: "91.4%",
     desc: "I completed my class 12 high school education at Sri Lal Convent School, Delhi, where I studied cores of Physics, Chemistry and Maths.",
     degree: "CBSE(XII), Physics, Chemistry and Mathematics",
   },
@@ -298,7 +329,7 @@ export const education = [
     img: "https://i.ibb.co/hfWQmxx/unnamed.jpg",
     school: "Shiv Jyoti Sr. Sec. School,Rajastan",
     date: "Apr 2017 - Apr 2018",
-    grade: "93.20%",
+    percentage: "93.20%",
     desc: "I completed my class 10 education at Shiv Jyoti Sr. Sec. School,Rajasthan, where I studied Science with Computer Application.",
     degree: "CBSE(X), Science with Computer",
   },
@@ -322,8 +353,8 @@ export const projects = [
       "Redux",
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify.duckdns.org",
+    github: "https://github.com/MetalNomad78/Facemeet",
+    webapp: "",
   },
   {
     id: 0,
@@ -334,8 +365,8 @@ export const projects = [
     image:"https://i.ibb.co/m0ryLzs/Snake-OG-logo.jpg",
     tags: ["C/C++", "Object Oriented Progamming(OOP)", "Data Structures and Algorithms(DSA)"],
     category: "coding",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
+    github: "https://github.com/MetalNomad78/Snake-Food-Game",
+    webapp: "",
   },
   {
     id: 1,
@@ -352,8 +383,8 @@ export const projects = [
       "Breadth-First Search Algorithm",
     ],
     category: "coding",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    github: "https://github.com/MetalNomad78/Pathfinding-Visualizer",
+    webapp: "",
   },
   {
     id: 2,
@@ -365,8 +396,8 @@ export const projects = [
       "https://i.ibb.co/R7R7Dg7/360-F-472515256-Du3swm-ADa-Jc-EK5o-TY5-YBxo-QNqz-EDn-DK7.jpg",
     tags: ["Flutter", "Dart", "Android Studio"],
     category: "android app",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
+    github: "https://github.com/MetalNomad78/shopping_cart_final",
+    webapp: "https://shoppingcartgroceries.netlify.app/",
   },
 ];
 

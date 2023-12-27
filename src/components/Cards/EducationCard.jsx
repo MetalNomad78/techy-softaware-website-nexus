@@ -117,7 +117,7 @@ const Date = styled.div`
     }
 `
 
-const Grade = styled.div`
+const Percentage = styled.div`
     font-size: 14px;
     font-weight: 500;
     color: ${({ theme }) => theme.text_secondary + 99};
@@ -130,21 +130,22 @@ const Grade = styled.div`
 
 const EducationCard = ({ education }) => {
     return (
-        <Card>
-            <Top>
-                <Image src={education.img} />
-                <Body>
-                    <Name>{education.school}</Name>
-                    <Degree>{education.degree}</Degree>
-                    <Date>{education.date}</Date>
-                </Body>
-            </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
-            <Description>
-                <Span>{education.desc}</Span>
-            </Description>
-        </Card>
+      <Card>
+        <Top>
+          <Image src={education.img} />
+          <Body>
+            <Name>{education.school}</Name>
+            <Degree>{education.degree}</Degree>
+            <Date>{education.date}</Date>
+          </Body>
+        </Top>
+        {education.percentage && <Percentage><b>Percentage: </b>{education.percentage}</Percentage>}
+        <Description>
+          <Span>{education.desc}</Span>
+        </Description>
+      </Card>
     )
-}
-
-export default EducationCard
+  }
+  
+  export default EducationCard;
+  

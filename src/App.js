@@ -1,5 +1,6 @@
+// App.js
 import { ThemeProvider } from "styled-components";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { darkTheme, lightTheme } from './utils/Themes.js'
 import Navbar from "./components/Navbar";
 import './App.css';
@@ -25,10 +26,12 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
+
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal)
+  console.log(openModal);
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
@@ -37,7 +40,6 @@ function App() {
           <HeroSection />
           <Wrapper>
             <Skills />
-            
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
