@@ -76,7 +76,7 @@ const Skill = styled.div`
 `;
 
 const SkillTitle = styled.h2`
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
@@ -92,7 +92,7 @@ const SkillList = styled.div`
 `;
 
 const SkillItem = styled.div`
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 80};
   border: 1px solid ${({ theme }) => theme.text_primary + 80};
@@ -113,17 +113,16 @@ const SkillItem = styled.div`
 `;
 
 const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
+  height: 60px;
 `;
 
 const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
+        <Title>Services</Title>
         <Desc>
-          Here are some of my skills on which I have been working on for the past 4 years.
+          Here are some of the services we provide at Techy Software
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (

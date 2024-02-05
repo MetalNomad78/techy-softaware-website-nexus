@@ -127,7 +127,7 @@ const ContactButton = styled.input`
 
 
 
-const Contact = () => {
+const FeedBack = () => {
 
   //hooks
   const [open, setOpen] = React.useState(false);
@@ -149,14 +149,14 @@ const Contact = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>Contact Us</Title>
-        <Desc>Feel free to reach out for any services you require</Desc>
+        <Title>FeedBack</Title>
+        <Desc>Feel free to give any feedback for our Website</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Us 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
+          <ContactTitle>Describe</ContactTitle>
+          <ContactInput placeholder="Topic" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+          <ContactInput placeholder="What you liked or disliked" name="subject" />
+          <ContactInputMessage placeholder="Any additional info?" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
         <Snackbar
@@ -171,4 +171,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default FeedBack

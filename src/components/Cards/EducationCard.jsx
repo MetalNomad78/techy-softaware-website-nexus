@@ -15,12 +15,12 @@ const Document = styled.img`
 
 const Description = styled.div`
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 15px;
     }
 `
 
@@ -74,7 +74,7 @@ const Top = styled.div`
 `
 
 const Image = styled.img`
-    height: 50px;
+    height: 200px;
     background-color: #000;
     border-radius: 10px;
     margin-top: 4px;
@@ -91,38 +91,11 @@ const Body = styled.div`
 
 
 const Name = styled.div`
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 600;
     color: ${({ theme }) => theme.text_primary + 99};
     @media only screen and (max-width: 768px){
-        font-size: 14px;
-    }
-`
-
-const Degree = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const Date = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
-
-const Percentage = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 20px;
     }
 `
 
@@ -135,11 +108,9 @@ const EducationCard = ({ education }) => {
           <Image src={education.img} />
           <Body>
             <Name>{education.school}</Name>
-            <Degree>{education.degree}</Degree>
-            <Date>{education.date}</Date>
           </Body>
         </Top>
-        {education.percentage && <Percentage><b>Percentage: </b>{education.percentage}</Percentage>}
+       
         <Description>
           <Span>{education.desc}</Span>
         </Description>

@@ -17,7 +17,7 @@ const Navbar = () => {
       <NavLogo to='/'>
           <Link to="/" style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
             <img
-              src="https://i.ibb.co/9wVM9Vm/siddhant-singh-high-resolution-logo-transparent.png"
+              src="https://i.ibb.co/3M5SZFB/techy-software-high-resolution-logo-transparent.png"
               alt="Your Logo"
               style={{ height: '3rem', marginRight: '8px' }}
             />
@@ -32,14 +32,11 @@ const Navbar = () => {
           }} />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink href="#about">About Us</NavLink>
+          <NavLink href='#skills'>Services</NavLink>
+          <NavLink href='#education'>Clients</NavLink>
         </NavItems>
-        <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
-        </ButtonContainer>
+        
         {
           isOpen &&
           <MobileMenu isOpen={isOpen}>
@@ -52,13 +49,10 @@ const Navbar = () => {
             <MobileLink href='#experience' onClick={() => {
               setIsOpen(!isOpen)
             }}>Experience</MobileLink>
-            <MobileLink href='#projects' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Projects</MobileLink>
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+            
           </MobileMenu>
         }
       </NavbarContainer>

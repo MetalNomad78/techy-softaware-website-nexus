@@ -34,11 +34,11 @@ const HeroSection = () => {
         <HeroInnerContainer className="hero-inner-container"> {/* Add a class for styling */}
           <HeroLeftContainer id="Left" className="hero-left-container"> {/* Add a class for styling */}
             <Title className="fade-in">
-              Hi, I am <br />
+              We are <br />
             </Title>
             <Title style={nameStyle} className="fade-in">{Bio.name}</Title>
             <TextLoop className="fade-in">
-              I am a
+              We provide
               <Span>
                 <Typewriter
                   options={{
@@ -50,13 +50,11 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <SubTitle className="fade-in">{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display" className="fade-in">
-              Resume/CV
-            </ResumeButton>
+            
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right" className="hero-right-container"> {/* Add a class for styling */}
-            <Img src={HeroImg} alt="hero-image" className="fade-in" /> {/* Add a class for styling */}
+            <Img src="https://i.pinimg.com/originals/ef/2d/b0/ef2db0885d94fd149a4b7914923bb2a3.gif" alt="hero-image" className="fade-in" /> {/* Add a class for styling */}
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

@@ -87,12 +87,11 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Siddhant Singh</Logo>
+        <Logo>Techy Software</Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink href="#about">About Us</NavLink>
+          <NavLink href="#skills">Services</NavLink>
+          <NavLink href="#education">Clients</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="_blank" rel="noopener noreferrer"><FacebookIcon /></SocialMediaIcon>
@@ -101,7 +100,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="_blank" rel="noopener noreferrer"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; Curated with Love❤️ - Siddhant Singh (2023).
+          &copy; Curated with Love❤️ - Siddhant Singh (2024).
         </Copyright>
       </FooterWrapper>
     </FooterContainer>
